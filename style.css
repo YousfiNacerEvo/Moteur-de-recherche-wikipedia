@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:none;
+    list-style: none;
+    outline: none;
+}
+body,main{
+    height: 100vh;
+    font-family: "Roboto", sans-serif;  
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+}
+.container img{
+    object-fit: cover;
+    width: 150px;
+    margin: auto;
+}
+.container .search-field{
+    height: 60px;
+    width: 600px;
+    margin:15px 0;
+    display: flex;
+
+}
+input,button{
+    height: 100%;
+}
+input{
+    width: 70%;
+    border-radius: 7px 0 0 7px;
+    padding: 5px 10px;
+    font-size: 18px;
+    background-color: #dddddd;
+}
+button{
+    background-color:rgb(24, 24, 161);
+    color:white;
+    border-radius: 0 7px 7px 0;
+    width: 30%;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+button:hover{
+    background-color: rgba(24, 24, 161, 0.502);
+}
+.output{
+    width: 600px;
+    height: 300px ;
+    overflow-x:auto ;
+}
+.output::-webkit-scrollbar{
+    width: 10px;
+}
+.output::-webkit-scrollbar-track{
+    background-color: #C0C0C0;
+}
+.output::-webkit-scrollbar-thumb{
+    background-color: rgb(24, 24, 161);
+    height: 10px;
+    border-radius: 20px;
+}
+.div-styling {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #dddddd;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+.div-styling h3{
+    color:rgb(24, 24, 161);
+}
+.div-styling p{
+    color: rgba(0, 0, 0, 0.591);
+}
